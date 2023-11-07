@@ -29,6 +29,85 @@
         <section>
             <h2>Contact</h2>
             <article>
+                <p>This online form is for collecting information from you, the user.</p>
+                <form action="/response" method="POST">
+                    <fieldset>
+                        <legend>Please provide your contact information</legend>
+                        <p><label for="name" class="required">First and Last Name
+                            <input type="text"
+                            name="name"
+                            id="name"
+                            required
+                            autofocus
+                            placeholder="e.g. John Smith"
+                            aria-required="true"/>
+                        </label></p>
+                        <p><label for="email" class="required">Email Address
+                            <input type="email"
+                            name="email"
+                            id="email"
+                            required
+                            placeholder="e.g. johnsmith@email.com"
+                            aria-required="true"
+                            />
+                        </label></p>
+                        <p><label for="message" class="required">What would you like for us to know?
+                            <textarea
+                            name="message"
+                            id="message"
+                            required
+                            placeholder="Limit 250 characters"
+                            maxlength="250"
+                            minlength="5"
+                            aria-required="true"
+                            ></textarea>
+                        </label></p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Please answer some questions about your experience</legend>
+                        <label for="viewing">What kind of device are you using to access this webpage?
+                            <select name="device" id="viewing">
+                                <option value="PC" >PC</option>
+                                <option value="Mac">Mac</option>
+                                <option value="Mobile Phone">Mobile Phone</option>
+                                <option value="Tablet" selected>Tablet</option>
+                            </select>
+                        </label>
+                        <p>Do you want for me to contact you with more information about my portfolio?
+                            <label for="yesEmail">
+                                <input type="radio" name="contact" id="yesEmail" value="Yes Email" checked>Yes, at my provided email address
+                            </label>
+                            <label for="yesOther">
+                                <input type="radio" name="contact" id="yesOther" value="Yes Other">Yes, through a different means provided
+                            </label>
+                            <label for="no">
+                                <input type="radio" name="contact" id="no" value="No">No, please do not contact me
+                            </label>
+                        </p>
+                        <p>What did you like about the website?</p>
+                        <p>
+                            <label for="webDev">
+                              <input type="checkbox" name="likes" id="webDev" value="Web Development"/>Explanations of Web Development Concepts
+                            </label>
+                        </p>
+                        <p>
+                            <label for="gallery">
+                                <input type="checkbox" name="likes" id="gallery" value="Gallery"/>Gallery of images
+                            </label>
+                        </p>
+                        <p>
+                            <label for="styling">
+                                <input type="checkbox" name="likes" id="styling" value="Styling"/>Style (Background, colors, fonts)
+                            </label>
+                        </p>
+                        <p>
+                            <label for="form">
+                                <input type="checkbox" name="likes" id="form" value="Interactive Form" checked/>Interactive Form
+                            </label>
+                        </p>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
             </article>
         </section>
     </main>
