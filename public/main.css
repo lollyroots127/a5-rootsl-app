@@ -222,9 +222,32 @@
   
   /*  ----- Form ----- */
   form {}
-  fieldset {}
-    legend {}
-  label {}
+  fieldset {
+    border: 2px solid var(--muddyBrown); 
+    margin-top: 1px; 
+    padding: 1%;  
+  }
+    legend {
+      color: var(--muddyBrown);
+      font-size: 1.5em;
+    }
+  label {
+    display:block;
+    margin-top:2%;
+    
+  }
+  input, button, textarea, select {
+    font-size:110%;
+    padding:1%;
+    font-family:inherit;
+  }
+  *:required {
+    border:2px solid var(--muddyBrown);
+  }
+  label.required:after {
+    content:" *";
+    color: var(--muddyBrown); 
+}
   button {}
   input {}
   select {}
