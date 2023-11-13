@@ -68,7 +68,7 @@ app.post("/review", (req, res) => {
       We are glad you liked ${likes}. Thank you for leaving this message:</p>
       <p>${notes}</p>
       <p>
-      You ${contactYesNo} want to be contacted further.
+      You said: "${contactYesNo}" to being contacted further.
       If requested, we will contact you at ${emailAddress}.</p>
       </article>
       ${htmlBottom}`

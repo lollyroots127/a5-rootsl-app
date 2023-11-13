@@ -242,11 +242,11 @@
     font-family:inherit;
   }
   *:required {
-    border:2px solid var(--muddyBrown);
+    border:2px solid red;
   }
   label.required:after {
     content:" *";
-    color: var(--muddyBrown); 
+    color: red; 
 }
   button {}
   input {}
